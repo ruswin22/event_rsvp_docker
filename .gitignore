@@ -1,0 +1,83 @@
+# -----------------------------
+# GLOBAL
+# -----------------------------
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node Modules
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Cache
+.cache/
+.tmp/
+temp/
+
+# Editor folders
+.vscode/
+.idea/
+
+# -----------------------------
+# BACKEND (Spring Boot / Maven)
+# -----------------------------
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# Maven settings
+.settings/
+.classpath
+.project
+
+# -----------------------------
+# FRONTEND (React/Vite/Angular)
+# -----------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.next/
+frontend/.nuxt/
+
+# -----------------------------
+# DOCKER
+# -----------------------------
+# Local volumes
+postgres_data/
+docker-data/
+docker-compose.override.yml
+
+# Ignore build context artefacts
+backend/target/
+backend/*.jar
+
+# Dockerfile intermediate layers
+**/Dockerfile*
+**/docker-compose.yml
+
+# -----------------------------
+# OTHER
+# -----------------------------
+*.tar
+*.zip
+*.gz
+
+Lab2.docx
+Lab2.pdf
